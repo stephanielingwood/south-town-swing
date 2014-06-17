@@ -83,7 +83,7 @@
 
 
     //game logic for War; winner of each round gets a point, and used cards are returned to the discard pile.
-    while (player1.hand.length != 0 || player2.hand.length != 0) {
+    while (player1.hand.length != 0 && player2.hand.length != 0) {
       var p1Card = player1.hand.shift();
       var p2Card = player2.hand.shift();
       if (debug = true) {
